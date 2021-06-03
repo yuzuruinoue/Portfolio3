@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>MyPortfolioB4</title>
+  <link rel="stylesheet" href="./top.css">
+  <script type="text/javascript" src="./libs/three.js"></script>
+  <!-- barba -->
+  <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.6/dist/barba.umd.min.js" crossOrigin></script>
+  <!-- IEでbarbaを読むためのpolyfill -->
+  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver" crossorigin="anonymous" defer></script> -->
+</head>
+
+<body data-barba="wrapper">
+  <div id="WebGL-output">
+    <!-- これの中身のみが非同期遷移．外ならそのまま．webglは外にかく？ -->
+    <main data-barba="container" data-barba-namespace="home">
+      <div id="htmlbody">
+        <!-- html -->
+        <header>
+          <p>
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+          </p>
+
+        </header>
+
+        <div class="under-wrapper">
+          <p>bbbbbbbbbbbbbb</p>
+        </div>
+      </div>
+    </main>
+  </div>
+
+
+  <script type="text/javascript" src="./threePlane.js"></script>
+</body>
+
+
+
+</html>
