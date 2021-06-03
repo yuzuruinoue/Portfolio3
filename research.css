@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+}
+
+body,div {
+  margin: 0;
+  font-family: 'Noto Serif JP', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+p{
+  margin:0;
+
+}
+
+.container {
+  /* max-width: 1170px; */
+  width: 100%;
+  /* padding: 0 15px; */
+  margin: 0 auto;
+}
+
+header {
+  height: 65px;
+  width: 100%;
+  background-color: rgba(250, 250, 250);
+  padding:20px;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.header-right{
+  float:right;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.header-right a{
+  color:rgb(180,180,180);
+  padding-left:18px;
+}
+
+.header-right a:hover{
+  color:rgb(200,0,0);
+}
+
+footer{
+  width:100%;
+  background-color:rgba(90,90,90);
+  height:30px;
+  text-align: center;
+  color:rgb(180,180,180);
+  font-size:12px;
+}
+
+footer p{
+  font-family: 'Libre Baskerville', serif;
+  transform:translateY(50%);
+  /* top:50%; */
+}
+
+.top-wrapper {
+  padding: 200px 0 200px 0;
+  /* background-image: url(https://prog-8.com/images/html/advanced/top.png); */
+  /* background-size: cover; */
+  color: black;
+  font-size:60px;
+  text-align: center;
+  background-color: rgb(250,250,250);
+}
+
+.top-wrapper h1{
+  font-family: 'Libre Baskerville', serif;
+}
+
+.main-wrapper{
+  width:80%;
+  margin:0 auto;
+}
+
+.current-wrapper{
+  font-size: 20px;
+  margin:40px 0;
+}
+
+.ever-wrapper{
+  font-size:20px;
+}
+
+.research-container{
+  /* background-color:rgb(0,100,10);
+  margin-bottom:50px; */
+  height:300px;
+  margin-top:10px;
+  margin-bottom:50px;
+}
+
+.research-img{
+  display: block;
+  width:40%;
+  margin:0;
+  height:100%;
+  /* background-image: url(./img/research/oto.jpg); */
+  background-position: center;
+  background-size:cover;
+  /* background-color: rgb(100,0,0); */
+  float:left;
+}
+
+.abst-wrapper{
+  display: inline-block;
+  float:left;
+  padding:30px 40px;
+  width:60%;
+  background-color: rgb(250,250,250);
+  height:100%;
+  position:relative;
+}
+
+.research-title{
+  color:rgb(20,20,20);
+  margin-bottom:20px;
+  font-size:16px;
+}
+
+.research-intro{
+  color:rgb(110,110,110);
+  font-size:14px;
+  margin-bottom: 20px;
+}
+
+.research-conference{
+  position:absolute;
+  bottom: 30px;
+  color:rgb(110,110,110);
+  font-size:13px;
+
+}

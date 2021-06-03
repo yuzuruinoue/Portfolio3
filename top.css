@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Serif JP', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 100px 0;
+  /* background-image: url(https://prog-8.com/images/html/advanced/top.png); */
+  /* background-size: cover; */
+  color: white;
+  text-align: center;
+}
+
+canvas#WebGL-output {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  margin:0;
+  padding:0;
+}
+
+#htmlbody {
+  position: absolute;
+  width: 100%;
+  margin:0;
+  padding:0;
+}
+
+header{
+  height:100px;
+  text-align: center;
+  background-color: rgb(0,200,0);
+}
+
+p{
+  margin-top:100px;
+}
+
+.under-wrapper{
+  margin-top:800px;
+  padding:400px 500px;
+  background-color:rgb(30,100,100);
+}

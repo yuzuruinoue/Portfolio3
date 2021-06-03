@@ -1,0 +1,94 @@
+three.jsポートフォリオメモ
+
+THREE.SphereGeometryのプロパティいじって
+thetaLength, thetaStartが変化するアニメーションよさげ
+
+THREE.TorusGeometryのarcでiphoneのCMみたいなおもちゃの
+表現できる
+
+ring使うと待機中のくるくるアニメーションできる
+z軸アニメーションあるとおもろいかも
+2次元くるくるだと思わせて途中からz軸方向にもくるくるしだすとか
+さらに進むとジオメトリの変化じゃなくて色がくるくるする
+
+THREE.TorusKnotGeometry
+よくわからんけど，qの値大きくしたらフレンチクルーラーできる
+
+パーティクルで，一個一個は薄い青とかなんだけど，
+重なりあったとこは白く見える．
+これを利用して文字を浮かびあがらせる
+
+ジオメトリを基にTHREE.Pointsを作成
+立体のサイズを大きくするとパーティクルはただ広がる
+サイズを適切な形にアニメーションするとパーティクルが意志を持って
+形を形成しているように感じる
+スイミーみたいな
+鳥が飛びながら鳥の形を群れで形成したら面白いよね
+文字の形成もいいかも，ボタンとかにできたらなお良い
+
+  function generateSprite() {
+
+            var canvas = document.createElement('canvas');
+            canvas.width = 16;
+            canvas.height = 16;
+
+            var context = canvas.getContext('2d');
+            var gradient = context.createRadialGradient(canvas.width / 2, canvas.height / 2, 0, canvas.width / 2, canvas.height / 2, canvas.width / 2);
+            gradient.addColorStop(0, 'rgba(255,255,255,1)');
+            gradient.addColorStop(0.2, 'rgba(0,255,255,1)');
+            gradient.addColorStop(0.4, 'rgba(0,0,64,1)');
+            gradient.addColorStop(1, 'rgba(0,0,0,1)');
+
+            context.fillStyle = gradient;
+            context.fillRect(0, 0, canvas.width, canvas.height);
+
+            var texture = new THREE.Texture(canvas);
+            texture.needsUpdate = true;
+            return texture;
+
+        }
+これをcreatePoints(geom)のmaterialのmapに割り当てる
+canvasコンテキストを取得して，
+createRadialGradientで淡いパーティクルを作る
+
+mergeで大量のオブジェクトを一斉に制御できる
+グループ化とマージは別．マージは一つのジオメトリになる．
+
+複雑なジオメトリをワイヤーフレーム表示し，
+背景を240(0xEEEEEE)くらい線を150くらい(0xaaaaaa)のグレーで表示すると
+なんかスタイリッシュでかっこよさげ
+頭良さそうで計算してそう感でる．
+
+8章サンプル12はPDBLoaderを使い，
+http://www.rcsb.org/
+にある蛋白質構造データバンクの分子構造を表示する
+
+外部データ読み込みと7章のジオメトリを引数としたTHREE.Points使いたい
+
+specular-map（とnormalmap）で絵を描いてその部分だけ光らせる
+
+canvas-texture，Literallyを使ってインタラクティブにテクスチャをかける
+マウス操作で勝手に描かれるようにする，背景の何かのテクスチャを
+カーボン紙みたいに浮かび上がる仕組みできるかも
+オブジェクトの配置を☆を描くようにするとか
+今モヤ焚き火やったらこれ使うなぁ
+
+ポストプロセスのグリッチはまじでかっこよい
+bloomはマテリアっぽくできるかも
+ずっと表示だと重そうだからボタン選択して切り替わるときとかに
+
+addmaskで部分的にポストプロセスかける
+マスクかけたシーンのみエフェクトが適用され，clearmaskで終了
+シーン内のディスプレイだけグリッチかけるとかできる
+inverseで一瞬ディスプレイと世界が逆になるみたいな演出もあり
+
+kaleidoscopeが元の形をとどめていない万華鏡のようで，
+ページごとに万華鏡状態がデフォルトにしておき，
+ボタンを押すと元の形が見えるようにすると
+もとは何だったのか気になって面白そう
+
+
+https://note.com/misaki_mofu/n/n21dccbabae20
+このシャドウマップかわいい
+
+python -m http.server 8000

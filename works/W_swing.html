@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Works/InoueYuzuru</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./production.css">
+  <!-- <script type="text/javascript" src="./libs/three.js"></script> -->
+  <!-- barba -->
+  <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.6/dist/barba.umd.min.js" crossOrigin></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- IEでbarbaを読むためのpolyfill -->
+  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver" crossorigin="anonymous" defer></script> -->
+</head>
+
+<header>
+  <div class="header-right">
+    <a href="../about.html">about</a>
+    <a href="../work.html">works</a>
+    <a href="../research.html">reserch</a>
+  </div>
+</header>
+
+
+<body data-barba="wrapper">
+  <div data-barba="container" data-barba-namespace="production">
+
+    <div class="top-wrapper">
+      <div class="top-img" style="background-image: url(../img/swing.jpg);">
+        <div class="black-filter">
+          <p class="page-title">OpenPoseを用いた野球スイングVR視聴</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-wrapper">
+      <div class="abst-wrapper">
+        <p>OpenPoseを用いて手や足の三次元座標を取得したものをUnityに持っていき，それぞれの座標を線で繋ぎスムージング処理などをしたものをHMDから見た動画です．</p>
+        <p>野球部の友人が「自分やプロ野球選手のスイングを360度から見たい」と言っていたのがきっかけで研究にしようと考えて作ったものです．</p>
+        <p>使用した技術：Unity, OpenPose</p>
+        <p>制作時期：2019年5月-8月頃</p>
+      </div>
+
+    <div class="movie-wrapper">
+      <div class="youtube">
+        <iframe src="https://www.youtube.com/embed/hhoUhYv6pnc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe src="https://www.youtube.com/embed/-aBS7uMELqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <!-- <iframe src="<iframe width="1280" height="720" src="https://www.youtube.com/embed/-aBS7uMELqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+
+      </div>
+    </div>
+  </div>
+
+  <div class="descr-wrapper">
+
+  </div>
+
+  </div>
+</body>
+
+<footer>
+  <p>© 2021 Yuzuru Inoue</p>
+
+</footer>
+
+</html>
