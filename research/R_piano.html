@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Works/InoueYuzuru</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./research.css">
+  <!-- <script type="text/javascript" src="./libs/three.js"></script> -->
+  <!-- barba -->
+  <!-- <script src="https://unpkg.com/@barba/core"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/@barba/core@2.9.6/dist/barba.umd.min.js" crossOrigin></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <!-- IEでbarbaを読むためのpolyfill -->
+  <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver" crossorigin="anonymous" defer></script> -->
+</head>
+
+<header>
+  <div class="header-right">
+    <a href="../about.html">about</a>
+    <a href="../work.html">works</a>
+    <a href="../research.html">reserch</a>
+  </div>
+
+</header>
+
+
+<body data-barba="wrapper">
+  <div data-barba="container" data-barba-namespace="production">
+
+    <div class="top-wrapper">
+      <div class="top-img" style="background-image: url(../img/research/piano.jpg);">
+        <div class="black-filter">
+          <p class="page-title">ピアノの強弱提示支援システム</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="main-wrapper">
+      <div class="abst-wrapper">
+        <p>概要</p>
+        <p>ピアノを演奏する上でどの指でも思い通りの強さで弾けるようになることは，表現の幅を広げることができ重要である。
+          ピアノを演奏する人の多くが，基礎練習曲を通して，指が独立して動くように練習する．しかし，それぞれの指の強弱を意識するのは難しく自分自身で弾いている最中に耳から入る音だけでは強弱の差に気が付きにくい．
+          本稿では，MIDI出力を利用して強弱を可視化するシステムを提案する．本システムは，リアルタイムでユーザに強弱のフィードバックを与えるシステムとユーザの演奏から譜面を再生成し，演奏後に強弱のフィードバックを与えるシステムで構成される．
+          譜面の再生成では，「ハノン」のような基礎練習に適していて，一つ一つの音の強弱の差を可視化する「ハノンモード」と，J-POPなどの曲の練習に適していて，「メロディーライン」や強弱記号を意識して練習することができる「ポップスモード」を用意した．
+          ユーザスタディの結果，耳で聴くだけではわからない強弱の差まで反省することができる，といった期待通りの意見があった一方で，フィードバックからどう改善するべきかわかりづらい，といった問題点が示唆された．</p>
+        <p>学会発表：井上弦，五十嵐悠紀．ピアノの強弱提示支援システムの検討．インタラクション2020論文集，2020，p.542-545．</p>
+        <p>PDFリンク : <a target="_blank" rel="noopener noreferrer" style="color:blue" href="http://www.interaction-ipsj.org/proceedings/2020/data/pdf/2A-10.pdf">http://www.interaction-ipsj.org/proceedings/2020/data/pdf/2A-10.pdf</a></p>
+      </div>
+
+    <div class="movie-wrapper">
+      <div class="youtube">
+        <iframe src="https://www.youtube.com/embed/9pfANen2lxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe src="https://www.youtube.com/embed/gO2Aj-gIUKM?start=10801" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+      </div>
+    </div>
+  </div>
+
+  <div class="descr-wrapper">
+
+  </div>
+
+  </div>
+</body>
+
+<footer>
+  <p>© 2021 Yuzuru Inoue</p>
+
+</footer>
+
+</html>
