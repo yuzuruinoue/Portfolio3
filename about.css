@@ -37,7 +37,7 @@ header {
   position :fixed;
   top: 0;
   z-index: 10;
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 
 .header-right{
@@ -104,15 +104,33 @@ footer p{
 }
 
 .main-wrapper{
-  width:50%;
-  margin:0 auto;
+  width:100%;
+  /* margin:0 auto; */
   font-size:15px;
   color:rgb(50,50,50);
+  position:relative;
+}
+
+.contents-wrapper{
+  margin-right: 20%;
+}
+
+@media(max-width:1000px){
+  .contents-wrapper{
+    margin-right:10%;
+  }
+}
+
+@media(max-width:670px){
+  .conntents-wrapper{
+    margin-right:10%;
+  }
 }
 
 .main-wrapper h2{
   font-size:22px;
   margin-top:40px;
+  margin-bottom:16px;
   font-weight:normal;
 }
 

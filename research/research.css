@@ -7,6 +7,16 @@ body,div {
   font-family: 'Noto Serif JP', serif;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+@media(max-width:670px) {
+  html{
+    font-size:55%;
+  }
+}
+
 p{
   margin:0;
 }
@@ -30,6 +40,7 @@ header {
   position :fixed;
   top: 0;
   z-index: 10;
+  font-size: 16px;
 }
 
 footer{
@@ -96,6 +107,12 @@ footer p{
   margin:0 auto;
 }
 
+@media(max-width:670px){
+  .main-wrapper{
+    width:90%;
+  }
+}
+
 .abst-wrapper{
   margin:40px 0;
   color: rgb(80,80,80);
@@ -103,6 +120,7 @@ footer p{
 
 .abst-wrapper p{
   margin-bottom:5px;
+  font-size: 1.6rem;
 }
 
 .movie-wrapper{

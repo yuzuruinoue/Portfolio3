@@ -1,25 +1,30 @@
 * {
   box-sizing: border-box;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 }
 
-body,div {
+body, div {
   margin: 0;
   font-family: 'Noto Serif JP', serif;
 }
 
-html{
-  font-size:62.5%;
+html {
+  font-size: 62.5%;
+}
+
+@media(max-width:670px) {
+  html{
+    font-size:55%;
+  }
 }
 
 a {
   text-decoration: none;
 }
 
-p{
-  margin:0;
-
+p {
+  margin: 0;
 }
 
 .container {
@@ -33,160 +38,162 @@ header {
   height: 65px;
   width: 100%;
   background-color: rgba(250, 250, 250);
-  padding:20px;
-  position :fixed;
+  padding: 20px;
+  position: fixed;
   top: 0;
   z-index: 10;
-  font-size: 1.6rem;
+  font-size: 16px;
 }
 
-.header-right{
-  float:right;
+.header-right {
+  float: right;
   font-family: 'Libre Baskerville', serif;
 }
 
-.header-right a{
-  color:rgb(180,180,180);
-  margin-left:18px;
+.header-right a {
+  color: rgb(180, 180, 180);
+  margin-left: 18px;
 }
 
-.header-right a:hover{
-  color:rgb(200,0,0);
+.header-right a:hover {
+  color: rgb(200, 0, 0);
 }
 
-footer{
-  width:100%;
-  background-color:rgba(90,90,90);
-  height:30px;
+footer {
+  width: 100%;
+  background-color: rgba(90, 90, 90);
+  height: 30px;
   text-align: center;
-  color:rgb(180,180,180);
-  font-size:1.2rem;
+  color: rgb(180, 180, 180);
+  font-size: 1.2rem;
 }
 
-footer p{
+footer p {
   font-family: 'Libre Baskerville', serif;
-  transform:translateY(50%);
+  transform: translateY(50%);
   /* top:50%; */
 }
 
 .top-wrapper {
   /* padding: 200px 0 200px 0; */
-  height:80vh;
+  height: 80vh;
   /* background-image: url(https://prog-8.com/images/html/advanced/top.png); */
   /* background-size: cover; */
-  background-color: rgb(250,250,250);
-  font-size:6.0rem;
+  background-color: rgb(250, 250, 250);
+  font-size: 6.0rem;
   position: relative;
 }
 
-@media(max-width:1000px){
-  .top-wrapper{
-    height:60vh;
-    font-size:4.0rem;
+@media(max-width:1000px) {
+  .top-wrapper {
+    height: 60vh;
+    font-size: 4.0rem;
   }
 }
 
-@media(max-width:670px){
-  .top-wrapper{
-    height:40vh;
-    font-size:3.0rem;
+@media(max-width:670px) {
+  .top-wrapper {
+    height: 40vh;
+    font-size: 3.0rem;
   }
 }
 
-.top-wrapper h1{
+.top-wrapper h1 {
   position: absolute;
   font-family: 'Libre Baskerville', serif;
   color: black;
   text-align: center;
-  top:50%;
-  left:50%;
-  transform:translateY(-50%) translateX(-50%);
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
 }
 
-.main-wrapper{
-  width:80%;
-  margin:0 auto;
+.main-wrapper {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.current-wrapper{
+.current-wrapper {
   font-size: 2.0rem;
-  margin:40px 0;
+  margin: 40px 0;
 }
 
-.ever-wrapper{
-  font-size:2.0rem;
+.ever-wrapper {
+  font-size: 2.0rem;
 }
 
-.research-container{
+.research-container {
   /* background-color:rgb(0,100,10);
   margin-bottom:50px; */
-  height:300px;
-  margin-top:10px;
-  margin-bottom:50px;
+  height: 300px;
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
-.research-img{
+.research-img {
   display: block;
-  width:40%;
-  margin:0;
-  height:100%;
+  width: 40%;
+  margin: 0;
+  height: 100%;
   /* background-image: url(./img/research/oto.jpg); */
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   /* background-color: rgb(100,0,0); */
-  float:left;
+  float: left;
 }
 
-
-.abst-wrapper{
+.abst-wrapper {
   display: inline-block;
-  float:left;
-  padding:30px 40px;
-  width:60%;
-  background-color: rgb(250,250,250);
-  height:100%;
-  position:relative;
+  float: left;
+  padding: 30px 40px;
+  width: 60%;
+  background-color: rgb(250, 250, 250);
+  height: 100%;
+  position: relative;
 }
 
-@media(max-width:670px){
-  .research-img{
-    float:none;
-    width:100%;
-    height:50%;
+@media(max-width:670px) {
+  .research-img {
+    float: none;
+    width: 100%;
+    height: 50%;
   }
-  .p{
-    margin:0;
+
+  .p {
+    margin: 0;
   }
-  .abst-wrapper{
-    float:none;
-    width:100%;
+
+  .abst-wrapper {
+    float: none;
+    width: 100%;
     /* margin-bottom: 30px; */
-    height:50%;
+    height: 50%;
   }
-  .research-container{
-    height:600px;
+
+  .research-container {
+    height: 600px;
   }
-  .main-wrapper{
-    width:90%;
+
+  .main-wrapper {
+    width: 90%;
   }
 }
 
-.research-title{
-  color:rgb(20,20,20);
-  margin-bottom:20px;
-  font-size:1.6rem;
+.research-title {
+  color: rgb(20, 20, 20);
+  margin-bottom: 20px;
+  font-size: 1.6rem;
 }
 
-.research-intro{
-  color:rgb(110,110,110);
-  font-size:1.4rem;
+.research-intro {
+  color: rgb(110, 110, 110);
+  font-size: 1.4rem;
   margin-bottom: 20px;
 }
 
-.research-conference{
-  position:absolute;
+.research-conference {
+  position: absolute;
   bottom: 30px;
-  color:rgb(110,110,110);
-  font-size:1.3rem;
-
+  color: rgb(110, 110, 110);
+  font-size: 1.3rem;
 }
