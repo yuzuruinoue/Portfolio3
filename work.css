@@ -103,6 +103,13 @@ header {
   margin:0 auto;
   /* clear:both; */
   overflow: hidden;
+  padding-top:1.5%;
+}
+
+@media(max-width:670px){
+  .works-wrapper{
+    padding-top:3%;
+  }
 }
 
 .left-container{
@@ -200,7 +207,7 @@ footer{
   height:30px;
   text-align: center;
   color:rgb(180,180,180);
-  font-size:12px;
+  font-size:1.2rem;
   /* bottom:0; */
   /* clear:both; */
 }
