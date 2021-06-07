@@ -7,6 +7,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Serif+JP&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./work.css">
+  <script type="text/javascript" src="./libs/three.js"></script>
   <!-- <script type="text/javascript" src="./libs/three.js"></script> -->
   <!-- barba -->
   <!-- <script src="https://unpkg.com/@barba/core"></script> -->
@@ -31,6 +32,8 @@
     <div class="top-wrapper">
       <!-- <div class="container"> -->
         <h1>Works</h1>
+        <div id="WebGL-output">
+        </div>
       <!-- </div> -->
     </div>
 
@@ -168,7 +171,7 @@
   </div>
 </div>
 </body>
-
+<script type="text/javascript" src="./threePlane.js"></script>
 <script type="text/javascript">
   $(function() {
     const $outerHeight = $('#smallCard').outerHeight(true);
