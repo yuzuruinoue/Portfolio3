@@ -28,6 +28,21 @@
 </header>
 
 <body data-barba="wrapper">
+  <div class="common-transition">
+    <div class="item"></div>
+       <div class="item"></div>
+       <div class="item"></div>
+       <div class="item"></div>
+       <div class="item"></div>
+       <div class="item"></div>
+       <div class="item"></div>
+
+
+  </div>
+
+
+
+
   <div data-barba="container" data-barba-namespace="work">
     <div class="top-wrapper">
       <!-- <div class="container"> -->
@@ -39,11 +54,12 @@
 
   <div class="works-wrapper">
     <div class="left-container">
+
       <div class="card-box big-img">
         <a href="./works/W_madeInAkiba.html">
           <img src="./img/abyssBP.jpg" />
           <div class="text-wrapper">
-            <div class="hover-text">test</div>
+            <div class="hover-text big-hoverText">メイドインアキバ</div>
           </div>
         </a>
       </div>
@@ -52,7 +68,16 @@
         <a href="./works/W_processingARPiano.html">
           <img src="./img/pianoprocessingP.jpg" id="smallImg" />
           <div class="text-wrapper">
-            <div class="hover-text">test</div>
+            <div class="hover-text">ARピアノ(プロトタイプ)</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-box">
+        <a href="./works/W_moyatakibi.html">
+          <img src="./img/forrestP.jpg" />
+          <div class="text-wrapper">
+            <div class="hover-text">モヤ焚き火</div>
           </div>
         </a>
       </div>
@@ -61,82 +86,7 @@
         <a href="./works/W_3dmodels.html">
           <img src="./img/drinkP.jpg" />
           <div class="text-wrapper">
-            <div class="hover-text">test</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="card-box">
-        <a href="./works/W_moyatakibi.html">
-          <img src="./img/forrestP.jpg" />
-          <div class="text-wrapper">
-            <div class="hover-text">test</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="card-box">
-        <a href="./works/W_homerun.html">
-          <img src="./img/baseballP.jpg" />
-          <div class="text-wrapper">
-            <div class="hover-text">test</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="card-box big-img">
-        <a href="./works/W_pianoprojectionUnity.html">
-          <img src="./img/pianoproUnityP.jpg" />
-          <div class="text-wrapper">
-            <div class="hover-text">test</div>
-          </div>
-        </a>
-      </div>
-    </div>
-
-
-    <div class="right-container">
-      <div class="card-box">
-        <a href="./works/W_moyatakibi.html">
-          <img src="./img/forrestP.jpg" />
-          <div class="text-wrapper">
-            <div class="hover-text">test</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="card-box">
-        <a href="./works/W_tweetIllumination.html">
-          <img src="./img/tweetChristmasP.jpg" />
-          <div class="text-wrapper">
-            <div class="hover-text">test</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="card-box">
-        <a href="./works/W_fractal.html">
-          <img src="./img/fractalP.jpg" />
-          <div class="text-wrapper">
-            <div class="hover-text">test</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="card-box">
-        <a href="./works/W_pianoprojectionUnity.html">
-          <img src="./img/baseballP.jpg" />
-          <div class="text-wrapper">
-            <div class="hover-text">test</div>
-          </div>
-        </a>
-      </div>
-
-      <div class="card-box big-img">
-        <a href="./works/W_overrule.html">
-          <img src="./img/overruleP.jpg"/>
-          <div class="text-wrapper">
-            <div class="hover-text">test</div>
+            <div class="hover-text">3Dモデリング集</div>
           </div>
         </a>
       </div>
@@ -145,7 +95,67 @@
         <a href="./works/W_swing.html">
           <img src="./img/swing.jpg" />
           <div class="text-wrapper">
-            <div class="hover-text">test</div>
+            <div class="hover-text">OpenPoseを用いた野球スイングVR視聴</div>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="card-box big-img">
+        <a href="./works/W_pianoprojectionUnity.html">
+          <img src="./img/pianoproUnityP.jpg" />
+          <div class="text-wrapper">
+            <div class="hover-text big-hoverText">ARピアノ</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="right-container">
+
+      <div class="card-box">
+        <a href="./works/W_tweetIllumination.html">
+          <img src="./img/tweetChristmasP.jpg" />
+          <div class="text-wrapper">
+            <div class="hover-text">TweetIllumination</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-box" id="smallCard">
+        <a href="./works/W_processingARPiano.html">
+          <img src="./img/pianoprocessingP.jpg" id="smallImg" />
+          <div class="text-wrapper">
+            <div class="hover-text">ARピアノ(プロトタイプ)</div>
+          </div>
+        </a>
+      </div>
+
+
+      <div class="card-box">
+        <a href="./works/W_fractal.html">
+          <img src="./img/fractalP.jpg" />
+          <div class="text-wrapper">
+            <div class="hover-text">フラクタル</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-box">
+        <a href="./works/W_homerun.html">
+          <img src="./img/baseballP.jpg" />
+          <div class="text-wrapper">
+            <div class="hover-text">ホームラン競争</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="card-box big-img">
+        <a href="./works/W_overrule.html">
+          <img src="./img/overruleP.jpg"/>
+          <div class="text-wrapper">
+            <div class="hover-text big-hoverText">OverRule</div>
           </div>
         </a>
       </div>
@@ -154,7 +164,7 @@
         <a href="./works/W_movies.html">
           <img src="./img/moviesP.jpg" />
           <div class="text-wrapper">
-            <div class="hover-text">test</div>
+            <div class="hover-text">動画制作</div>
           </div>
         </a>
       </div>
@@ -163,7 +173,7 @@
         <a href="./works/W_tinter.html">
           <img src="./img/tinterP.jpg" />
           <div class="text-wrapper">
-            <div class="hover-text">test</div>
+            <div class="hover-text">tinter</div>
           </div>
         </a>
       </div>

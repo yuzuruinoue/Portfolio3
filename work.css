@@ -190,7 +190,7 @@ header {
 }
 
 .hover-text{
-  font-size:30px;
+  font-size:2.0rem;
   color: white;
   position:absolute;
   top:50%;
@@ -202,6 +202,9 @@ header {
   /* transform:translateX(50%); */
 }
 
+.big-hoverText{
+  font-size:2.8rem;
+}
 
 footer{
   width:100%;
@@ -220,3 +223,6 @@ footer p{
   /* height:0; */
   /* top:50%; */
 }
+
+
+/* barba */
