@@ -227,5 +227,18 @@ footer p{
   /* top:50%; */
 }
 
+#loading{
+  width:100vw;
+  height:100vh;
+  transition: all 1s;
+  background-color:rgb(246,248,250);
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:10;
+}
 
-/* barba */
+.loaded{
+  opacity:0;
+  visibility:hidden;
+}

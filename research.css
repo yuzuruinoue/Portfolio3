@@ -205,3 +205,19 @@ footer p {
   color: rgb(110, 110, 110);
   font-size: 1.3rem;
 }
+
+#loading{
+  width:100vw;
+  height:100vh;
+  transition: all 1s;
+  background-color:rgb(246,248,250);
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:10;
+}
+
+.loaded{
+  opacity:0;
+  visibility:hidden;
+}

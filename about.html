@@ -29,6 +29,10 @@
 <body data-barba="wrapper">
   <div data-barba="container" data-barba-namespace="about">
 
+    <div id="loading">
+
+    </div>
+
     <div class="top-wrapper">
       <!-- <div class="container"> -->
       <h1 id="about-text">About</h1>
@@ -40,10 +44,10 @@
 
         <div class="profile-wrapper">
           <h2>プロフィール</h2>
-          <p><span>名前</span>　井上弦（ゆづる）</p>
+          <p><span>名前</span>　井上 弦（ゆづる）</p>
           <p><span>所属</span>　明治大学大学院　先端数理科学研究科　先端メディアサイエンス専攻　五十嵐研究室</p>
           <p><span>学年</span>　修士1年</p>
-          <p><span>資格</span>　CGエンジニア検定　CGクリエイター検定　画像処理エンジニア検定　色彩検定2級</p>
+          <p><span>資格</span>　CGエンジニア検定(エキスパート)，CGクリエイター検定(エキスパート)，画像処理エンジニア検定(エキスパート)，色彩検定2級</p>
         </div>
 
         <div class="paragraph-wrapper">
@@ -73,6 +77,9 @@
   </footer>
 
   <script type="text/javascript">
+  window.onload=function(){
+    document.getElementById('loading').classList.add('loaded');
+  }
     $(function() {
       const $topWidth = $('.top-wrapper').width();
       const $aboutWidth = $('#about-text').width();

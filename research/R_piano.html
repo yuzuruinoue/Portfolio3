@@ -29,6 +29,10 @@
 <body data-barba="wrapper">
   <div data-barba="container" data-barba-namespace="production">
 
+    <div id="loading">
+
+   </div>
+
     <div class="top-wrapper">
       <div class="top-img" style="background-image: url(../img/research/piano.jpg);">
         <div class="black-filter">
@@ -63,6 +67,12 @@
 
   </div>
 </body>
+
+<script type="text/javascript">
+ window.onload=function(){
+   document.getElementById('loading').classList.add('loaded');
+ }
+ </script>
 
 <footer>
   <p>© 2021 Yuzuru Inoue</p>

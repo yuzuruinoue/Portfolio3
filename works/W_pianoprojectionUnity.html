@@ -29,6 +29,10 @@
 <body data-barba="wrapper">
   <div data-barba="container" data-barba-namespace="production">
 
+    <div id="loading">
+
+   </div>
+
     <div class="top-wrapper">
       <div class="top-img" style="background-image: url(../img/pianoproUnityP.jpg);">
         <div class="black-filter">
@@ -41,9 +45,10 @@
       <div class="abst-wrapper">
         <p>シンセサイザーとPCを繋ぎ，弾いた鍵盤の位置に応じてエフェクトがARで出現するシステムです．椎名林檎さんの「長く短い祭」という曲を演奏したので，エフェクトは主にリンゴとMVに出てくるロープとライターがたまに出てくるようにしました．</p>
         <p><a style="color:blue;" href="https://youtu.be/FPueNpAg0bw" target="_blank" rel="noopener noreferrer">こちら</a>の動画を見て自分でも作ってみたいを思い，制作しました．</p>
+        <p>今後も，曲によって新しいエフェクトを作る，シェーダ書く，転調を自動判別してエフェクトを変えるなどやりたいことがたくさんあるので，ブラッシュアップしていきます．</p>
         <!-- <p>工夫した点：</p> -->
         <p>使用した技術：Unity，Vuforia，MidiJack</p>
-        <p>制作時期：2020年10月</p>
+        <p>制作時期：2020年10月-</p>
       </div>
 
     <div class="movie-wrapper">
@@ -60,6 +65,12 @@
 
   </div>
 </body>
+
+<script type="text/javascript">
+ window.onload=function(){
+   document.getElementById('loading').classList.add('loaded');
+ }
+ </script>
 
 <footer>
   <p>© 2021 Yuzuru Inoue</p>

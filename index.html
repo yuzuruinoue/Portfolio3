@@ -45,6 +45,12 @@
 
   <div data-barba="container" data-barba-namespace="work">
     <div class="top-wrapper">
+
+      <div id="loading">
+
+      </div>
+
+
       <!-- <div class="container"> -->
         <h1>Works</h1>
         <div id="WebGL-output">
@@ -183,6 +189,9 @@
 </body>
 <script type="text/javascript" src="./threePlane.js"></script>
 <script type="text/javascript">
+window.onload=function(){
+  document.getElementById('loading').classList.add('loaded');
+}
   $(function() {
     const $outerHeight = $('#smallCard').outerHeight(true);
     const $imgHeight = $('#smallImg').height();
