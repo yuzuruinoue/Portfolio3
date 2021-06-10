@@ -40,7 +40,8 @@ header {
   height: 65px;
   width: 100%;
   /* background-color: rgba(250, 250, 250); */
-  background-color: rgba(197, 205, 209);
+  /* background-color: rgba(197, 205, 209); */
+  background-color: rgba(246, 248, 250);
   padding:20px;
   position :fixed;
   top: 0;
@@ -69,7 +70,8 @@ header {
   height:80vh;
   /* background-image: url(https://prog-8.com/images/html/advanced/top.png); */
   /* background-size: cover; */
-  background-color: rgb(197,205,209);
+  /* background-color: rgb(197,205,209); */
+  background-color: rgba(246, 248, 250);
   font-size:6.0rem;
   position: relative;
 }
@@ -100,7 +102,8 @@ header {
 }
 
 .works-wrapper{
-  background-color: rgb(200,200,200);
+  /* background-color: rgb(200,200,200); */
+  background-color: rgba(246, 248, 250);
   text-align:center;
   margin:0 auto;
   /* clear:both; */

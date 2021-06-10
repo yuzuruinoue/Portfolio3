@@ -7,7 +7,7 @@ function init(){
   // camera.position.z=20;
 
   var renderer=new THREE.WebGLRenderer();
-  renderer.setClearColor(new THREE.Color(0xc5cdd1));
+  renderer.setClearColor(new THREE.Color(0xf6f8fa));
   renderer.setSize(window.innerWidth,window.innerHeight);
   // renderer.setSize(document.body.clientWidth,window.innerHeight);
 

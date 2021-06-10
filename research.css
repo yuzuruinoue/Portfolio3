@@ -37,7 +37,10 @@ p {
 header {
   height: 65px;
   width: 100%;
-  background-color: rgba(250, 250, 250);
+  /* background-color: rgba(250, 250, 250); */
+  /* background-color: rgba(197, 205, 209); */
+  /* background-color: rgba(240, 245, 250); */
+  background-color: rgba(246, 248, 250);
   padding: 20px;
   position: fixed;
   top: 0;
@@ -79,7 +82,10 @@ footer p {
   height: 80vh;
   /* background-image: url(https://prog-8.com/images/html/advanced/top.png); */
   /* background-size: cover; */
-  background-color: rgb(250, 250, 250);
+  /* background-color: rgb(250, 250, 250); */
+  /* background-color: rgba(197, 205, 209); */
+  /* background-color: rgba(240, 245, 250); */
+  background-color: rgba(246, 248, 250);
   font-size: 6.0rem;
   position: relative;
 }
@@ -147,7 +153,9 @@ footer p {
   float: left;
   padding: 30px 40px;
   width: 60%;
-  background-color: rgb(250, 250, 250);
+  /* background-color: rgb(250, 250, 250); */
+  /* background-color: rgba(240, 245, 250); */
+  background-color: rgba(246, 248, 250);
   height: 100%;
   position: relative;
 }
