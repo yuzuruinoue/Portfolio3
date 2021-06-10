@@ -30,29 +30,38 @@
   <div data-barba="container" data-barba-namespace="production">
 
     <div class="top-wrapper">
-      <div class="top-img" style="background-image: url(../img/abyssBP.jpg);">
+      <div class="top-img" style="background-image: url(../img/research/oto3dP.jpg);">
         <div class="black-filter">
-          <p class="page-title">メイドインアキバ</p>
+          <p class="page-title">3D音作り</p>
         </div>
       </div>
     </div>
 
     <div class="main-wrapper">
       <div class="abst-wrapper">
-        <p>GPSとARを使い，現実世界で秋葉原を歩きながら物語を進めるRPGです．友人の誕生日を祝うために，もう一人の友人と共同で制作しました．共同制作者がシナリオとイラストを担当し，私がシステムを担当しました．iOSビルドしてdeploy gateにアップロードすることで友人に配布を行いました．</p>
-        <p>使用した技術：Unity, After Effects, Photo Shop, </p>
-        <p>制作時期：2020年3月-9月(途中院試などの影響で進行が止まっている期間があります)</p>
+        <p>概要</p>
+        <p>音の三要素は「高さ」「大きさ」「音色」である．これらの要素は音の周波数分布と時間軸方向の変化によって決まる．
+          本研究では，x軸を周波数軸に，z軸を時間軸に，y軸をパワースペクトルに適用したボックスの集合体をVR空間内で編集し，その変化に応じてサウンドデータがリアルタイムで編集されるシステムを提案する．
+          これにより，従来のものより直感的に音の編集ができることを期待する．</p>
+          <p>
+          ハンドトラッキングでボックスを編集する部分を制作したので，このボックスの変化に応じてサウンドデータを逆フーリエ変換し，リアルタイムで編集される音が聴こえるようにする．
+          左手のピンチで選択範囲を決定し，右手をピンチして上下に動かすことでボックスの高さを変化させているが，この辺の操作は検討中．一番手前のボックスのみリアルタイムで周波数分布を表示しているが，これを事前処理して時間軸方向に伸ばしたい．
+          </p>
+        <!-- <p>学会発表：井上弦，五十嵐悠紀．音作り初心者のためのエフェクト付与支援システムの検討．インタラクション2021論文集，2021，p.573-575．</p> -->
+        <!-- <p>PDFリンク : <a target="_blank" rel="noopener noreferrer" style="color:blue" href="http://www.interaction-ipsj.org/proceedings/2021/data/pdf/3B15.pdf">http://www.interaction-ipsj.org/proceedings/2021/data/pdf/3B15.pdf</a></p> -->
       </div>
 
     <div class="movie-wrapper">
       <div class="youtube">
-        <iframe src="https://www.youtube.com/embed/gO2Aj-gIUKM?start=10801" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/XZpZ-x4XBoU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <!-- <iframe src="https://www.youtube.com/embed/RdkV3_HASPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <!-- <iframe src="https://www.youtube.com/embed/9pfANen2lxY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+        <!-- <iframe src="https://www.youtube.com/embed/gO2Aj-gIUKM?start=10801" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
       </div>
     </div>
   </div>
 
   <div class="descr-wrapper">
-    <p>Mapbox使ったとかGPSの誤差を気にしたとか上昇負荷をすべてくらった様子とか余力あればかく</p>
 
   </div>
 
