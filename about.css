@@ -16,7 +16,7 @@ html{
 
 @media(max-width:670px){
   html{
-    font-size:55%;
+    /* font-size:55%; */
   }
 }
 
@@ -117,7 +117,7 @@ footer p{
 .main-wrapper{
   width:100%;
   /* margin:0 auto; */
-  font-size:1.5rem;
+  font-size:1.6rem;
   color:rgb(50,50,50);
   position:relative;
 }
@@ -139,14 +139,45 @@ footer p{
 }
 
 .main-wrapper h2{
-  font-size:2.0rem;
+  font-size:1.6rem;
   margin-top:40px;
   margin-bottom:16px;
-  font-weight:normal;
+  font-weight:bold;
+  color:rgb(20,20,20);
+}
+
+.profile-subjects{
+  float: left;
+}
+
+.profile-contents{
+  /* float:left; */
+  margin-left: 60px;
+}
+
+.profile-wrapper{
+  overflow: hidden;
 }
 
 .profile-wrapper span{
   color:rgb(100,100,100);
+}
+
+.profile-wrapper p{
+  line-height:20px;
+  color:rgb(60,60,60);
+}
+
+.subject{
+  margin-bottom: 8px;
+}
+
+.paragraph-container{
+  margin-bottom:50px;
+}
+
+.paragraph-container p{
+  color:rgb(60,60,60);
 }
 
 #loading{

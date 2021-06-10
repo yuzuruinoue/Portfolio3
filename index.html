@@ -44,11 +44,11 @@
 
 
   <div data-barba="container" data-barba-namespace="work">
+    <div id="loading">
+
+    </div>
     <div class="top-wrapper">
 
-      <div id="loading">
-
-      </div>
 
 
       <!-- <div class="container"> -->
@@ -197,14 +197,6 @@ window.onload=function(){
     const $imgHeight = $('#smallImg').height();
     $('.big-img').height($outerHeight + $imgHeight);
 
-    $('img').hover(
-      function() {
-        console.log("a");
-      },
-      function() {
-        console.log("b");
-      }
-    );
 
     $(window).resize(function() {
       const $outerHeight = $('#smallCard').outerHeight(true);
