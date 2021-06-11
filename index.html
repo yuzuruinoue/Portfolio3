@@ -176,12 +176,18 @@
 <script type="text/javascript" src="./threePlane.js"></script>
 <script type="text/javascript">
 window.onload=function(){
+  const $outerHeight = $('#smallCard').outerHeight(true);
+  const $imgHeight = $('#smallImg').height();
+  $('.big-img').height($outerHeight + $imgHeight);
   document.getElementById('loading').classList.add('loaded');
 }
+
   $(function() {
+
     const $outerHeight = $('#smallCard').outerHeight(true);
     const $imgHeight = $('#smallImg').height();
     $('.big-img').height($outerHeight + $imgHeight);
+
 
 
     $(window).resize(function() {
